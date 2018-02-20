@@ -3,8 +3,9 @@ class LocationsController < ApplicationController
   def new
   end
   
-  def show
+  def create
+  	render plain: params[:location].inspect
   end
-  
+
 
 end
